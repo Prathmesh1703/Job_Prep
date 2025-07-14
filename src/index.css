@@ -110,6 +110,23 @@
   --sidebar-ring: oklch(0.556 0 0);
 }
 
+
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-40px); }
+}
+@keyframes bounce-fast {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-80px); }
+}
+@keyframes bounce-mid {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-60px); }
+}
+.animate-bounce-slow { animation: bounce-slow 4s infinite; }
+.animate-bounce-fast { animation: bounce-fast 2.5s infinite; }
+.animate-bounce-mid { animation: bounce-mid 3.2s infinite; }
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
