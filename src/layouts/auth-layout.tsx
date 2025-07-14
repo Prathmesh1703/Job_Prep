@@ -91,7 +91,7 @@ export const AuthLayout = () => {
           className="bg-transparent border-none text-white text-base cursor-pointer transition-colors hover:text-blue-400 active:text-blue-600"
           onClick={() => loginWithRedirect()}
         >
-          Log In
+          Get Started
         </button>
       )}
     </div>
